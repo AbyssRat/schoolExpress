@@ -9,11 +9,13 @@ app.use(express.json());
 
 import studentsRouter from './api/students.js';
 import coursesRouter from './api/courses.js';
+import enrollmentsRouter from './api/enrollments.js';
 
 //:3
 
 app.use('/students', studentsRouter);
 app.use('/courses', coursesRouter);
+app.use('/enrollments', enrollmentsRouter);
 
 //itt meg vége
 
