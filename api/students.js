@@ -1,6 +1,6 @@
 import express from 'express';
 import * as studentsModel from '../model/studentsModel.js';
-const studentsRouter = exppress.Router();
+const studentsRouter = express.Router();
 
 //CRUD (Create, Read, Update, Delete) műveleteket REST végpontokon keresztül.
 
@@ -94,3 +94,5 @@ studentsRouter.delete('/:id', async (req, res) => {
         res.status(501).send({ error: 'Hiba történt a diák törlése során.' });
     }
 });
+
+export default studentsRouter;
