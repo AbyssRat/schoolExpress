@@ -8,10 +8,12 @@ app.use(express.json());
 //ide
 
 import studentsRouter from './api/students.js';
+import coursesRouter from './api/courses.js';
 
 //:3
 
 app.use('/students', studentsRouter);
+app.use('/courses', coursesRouter);
 
 //itt meg vége
 
